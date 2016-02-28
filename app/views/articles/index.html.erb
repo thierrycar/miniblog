@@ -1,0 +1,6 @@
+<h1>Miniblog</h1>
+
+<%= paginate @articles %>
+<% @articles.each do |article| %>
+  <p class="lead bg-info"><a href="/<%= article.id %>"><%= article.title %></a></p>
+<% end %>
